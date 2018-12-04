@@ -1,0 +1,34 @@
+{
+  "name": "voodoo/kernel",
+  "description": "Kernel package for my personal project skeleton",
+  "minimum-stability": "stable",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "Max Schröter",
+      "email": "reabmax@googlemail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Voodoo\\Kernel\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Voodoo\\Kernel\\": "tests/unit"
+    }
+  },
+  "require": {
+    "psr/container": "1.0.0",
+    "symfony/event-dispatcher": "v4.1.6",
+    "zendframework/zend-diactoros": "2.0.0",
+    "zendframework/zend-stratigility": "3.0.2",
+    "zendframework/zend-httphandlerrunner": "1.0.1",
+    "voodoo/db": "@dev",
+    "voodoo/module": "@dev"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "7.4.3"
+  }
+}
