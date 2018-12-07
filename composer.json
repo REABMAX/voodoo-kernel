@@ -25,7 +25,7 @@
     "zendframework/zend-diactoros": "2.0.0",
     "zendframework/zend-stratigility": "3.0.2",
     "zendframework/zend-httphandlerrunner": "1.0.1",
-    "voodoo/db": "@dev",
+    "voodoo/di": "@dev",
     "voodoo/module": "@dev"
   },
   "require-dev": {
