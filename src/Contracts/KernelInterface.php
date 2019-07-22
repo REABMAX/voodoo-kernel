@@ -2,9 +2,10 @@
 
 namespace Voodoo\Kernel\Contracts;
 
-use Psr\Container\ContainerInterface;
-use Symfony\Component\EventDispatcher\EventDispatcherInterface;
+use Psr\EventDispatcher\ListenerProviderInterface;
+use Voodoo\Di\Contracts\ContainerConfiguratorInterface;
 use Voodoo\Module\Contracts\ModuleManagerInterface;
+use Voodoo\Router\Contracts\RouterConfiguratorInterface;
 
 /**
  * Interface KernelInterface
@@ -14,14 +15,6 @@ interface KernelInterface
 {
     /**
      * Dispatch the whole thing
-     *
-     * @param ContainerInterface $container
-     * @param ModuleManagerInterface $moduleManager
-     * @param EventDispatcherInterface $eventDispatcher
      */
-    public function dispatch(
-        ContainerInterface $container,
-        ModuleManagerInterface $moduleManager,
-        EventDispatcherInterface $eventDispatcher
-    );
+    public function dispatch();
 }
